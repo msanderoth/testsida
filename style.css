@@ -1,0 +1,142 @@
+:root {
+    --color-bg: #dfdfdf;
+    --color-box: #fff;
+    --color-plum: #6D035F;
+    --color-black: #000;
+    --color-white: #fff;
+
+    --font-heading: "Montserrat", sans-serif;
+    --font-body: "Montserrat", sans-serif;
+
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 86px;
+    --spacing-xl: 90px;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    padding: var(--spacing-xl);
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    background-color: var(--color-bg); 
+}
+
+body>* {
+    max-width: min(100vw, 1200px);
+    justify-self: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: var(--spacing-sm);
+    gap: var(--spacing-lg);
+    align-self: stretch;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 72px;
+    padding: var(--spacing-md);
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-lg);
+}
+
+footer {
+    background-color: var(--color-plum);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-sm);
+    gap: var(--spacing-lg);
+    width: 100%;
+    height: 540px;
+}
+
+.box {
+    display: flex;
+    height: 540px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-md);
+    align-self: stretch;
+    background-color: #fff;
+}
+
+.list {
+    list-style-type: circle;
+}
+
+.email {
+    font-weight: 600;
+}
+ 
+.column {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--spacing-md);
+    align-self: stretch;
+}
+
+.row {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: var(--spacing-md);
+}
+   
+#image, #row, #column {
+    background-color: #dfdfdf;
+}
+
+img{
+    display: inline;
+}
+
+h1 {
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color-plum)
+}
+
+p, li, a {
+    font-family: var(--font-body);
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer h2 {
+    color: var(--color-white);
+}
